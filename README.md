@@ -12,9 +12,18 @@ This repository contains my portfolio website, bringing together selected analyt
 - [Customer Experience Analytics](https://github.com/JJGohildev/cx-analytics-dashboard): Power BI reporting on customer satisfaction and support performance using simulated data.
 - [HR Performance & Reporting Automation](https://github.com/JJGohildev/HR-Performance-KPI-dashboard): Power BI workforce reporting with SQL checks and an Excel VBA reporting routine, using simulated data.
 
-## Website
+## How I built this portfolio
 
-Built with HTML, CSS, and JavaScript and hosted on GitHub Pages. Includes dashboard previews, a downloadable resume, and a cursor-controlled portrait with a static fallback for touch devices and reduced-motion preferences.
+I created this portfolio with AI-assisted tools, starting with a single front-facing photo.
+
+- **ChatGPT:** Generated additional portrait angles from my original photo.
+- **Google Flow:** Combined those images into an animated portrait sequence.
+- **Claude Design:** Helped build the website and connect cursor movement to the portrait animation.
+- **ChatGPT:** Guided me through reviewing the export and deploying the website on GitHub Pages.
+
+I selected the content, refined the layout and wording, and tested the published website. The dashboard previews show my Power BI and Tableau project work.
+
+The website runs on HTML, CSS, and JavaScript.
 
 ## Contact
 

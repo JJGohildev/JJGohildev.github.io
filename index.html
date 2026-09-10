@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jaydipsinh Gohil | Data Analyst Portfolio</title>
+<meta name="description" content="Portfolio of Jaydipsinh Gohil, data analyst in Koblenz, Germany. Power BI, SQL, Tableau and Excel projects covering KPI reporting, dashboard development and data validation." />
+<meta name="author" content="Jaydipsinh Gohil" />
+<meta name="theme-color" content="#F6F3EE" />
+<link rel="canonical" href="https://jjgohildev.github.io/" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Jaydipsinh Gohil" />
+<meta property="og:title" content="Jaydipsinh Gohil | Data Analyst Portfolio" />
+<meta property="og:description" content="Power BI, SQL, Tableau and Excel projects covering KPI reporting, dashboard development and data validation." />
+<meta property="og:url" content="https://jjgohildev.github.io/" />
+<meta property="og:image" content="https://jjgohildev.github.io/assets/share-preview.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Jaydipsinh Gohil | Data Analyst Portfolio" />
+<meta name="twitter:description" content="Power BI, SQL, Tableau and Excel projects covering KPI reporting, dashboard development and data validation." />
+<meta name="twitter:image" content="https://jjgohildev.github.io/assets/share-preview.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #F6F3EE; }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-synthesis: none; color: #1E1E1C; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  img, video { max-width: 100%; }
+  a { color: #22364F; text-decoration: none; }
+  a:hover { color: #1E1E1C; }
+  a, button { cursor: pointer; }
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px solid #22364F; outline-offset: 3px; border-radius: 4px; }
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 84px; }
+  ul { margin: 0; padding: 0; list-style: none; }
+  h1, h2, h3, p { margin: 0; }
+
+  /* width:100% matters inside the hero, whose .wrap is a flex item — without it
+     `margin:0 auto` cancels the stretch and the block shrink-to-fits. */
+  .wrap { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 clamp(22px, 4vw, 44px); }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: .16em; text-transform: uppercase; color: #22364F; }
+  .h2 { font-weight: 600; letter-spacing: -.03em; line-height: 1.06; font-size: clamp(1.9rem, 4.2vw, 2.8rem); }
+  .body { font-size: clamp(16px, 1.5vw, 17.5px); line-height: 1.6; color: #33332F; text-wrap: pretty; }
+  .sec { padding: clamp(44px, 6vw, 84px) 0; }
+  .tint { background: #EFEAE2; }
+
+  .btn { display: inline-flex; align-items: center; gap: 9px; min-height: 48px; border-radius: 999px; font-size: 15.5px; font-weight: 500; padding: 0 24px; border: 1px solid transparent; font-family: inherit; transition: background-color .2s ease, border-color .2s ease, color .2s ease; }
+  .btn-solid { background: #22364F; color: #F6F3EE; }
+  .btn-solid:hover { background: #1E1E1C; color: #F6F3EE; }
+  .btn-ghost { border-color: rgba(30,30,28,.34); color: #1E1E1C; background: transparent; }
+  .btn-ghost:hover { background: #fff; border-color: #1E1E1C; }
+  .link-plain { display: inline-flex; align-items: center; min-height: 44px; font-size: 15.5px; color: #4A4A44; text-decoration: underline; text-underline-offset: 3px; transition: color .2s ease; }
+  .link-plain:hover { color: #1E1E1C; }
+  .chip { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .04em; color: #4A4A44; border: 1px solid rgba(30,30,28,.2); border-radius: 999px; padding: 6px 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+
+  header.site { position: sticky; top: 0; z-index: 40; background: rgba(246,243,238,.86); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(30,30,28,.09); }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 12px; padding-bottom: 12px; }
+  .brand { display: flex; align-items: center; gap: 12px; color: #1E1E1C; }
+  .brand span.mark { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #22364F; color: #F6F3EE; font-size: 13px; font-weight: 600; letter-spacing: .02em; }
+  .brand span.name { font-weight: 500; font-size: clamp(15px, 1.4vw, 17px); letter-spacing: -.01em; }
+  nav.desktop { display: none; align-items: center; gap: clamp(16px, 2.4vw, 32px); font-size: 16px; }
+  nav.desktop a { color: #1E1E1C; transition: opacity .2s ease; }
+  nav.desktop a:hover { opacity: .55; }
+  nav.desktop a.resume { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #22364F; border-radius: 999px; padding: 9px 18px; min-height: 44px; color: #22364F; font-size: 15px; }
+  nav.desktop a.resume:hover { background: #22364F; color: #F6F3EE; opacity: 1; }
+  .burger { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; background: none; border: 0; width: 44px; height: 44px; padding: 0; }
+  .burger span { display: block; width: 22px; height: 1.5px; background: #1E1E1C; transition: transform .3s ease, opacity .3s ease; }
+  .burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+  #mobile-menu { position: fixed; inset: 0; z-index: 39; background: rgba(246,243,238,.97); backdrop-filter: blur(6px); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 24px; padding: 0 clamp(22px, 6vw, 40px); transition: opacity .3s ease; opacity: 0; visibility: hidden; pointer-events: none; }
+  #mobile-menu.open { opacity: 1; visibility: visible; pointer-events: auto; }
+  #mobile-menu a { font-size: 30px; font-weight: 500; color: #1E1E1C; }
+  #mobile-menu a.resume { display: inline-flex; align-items: center; gap: 10px; color: #22364F; text-decoration: underline; text-underline-offset: 4px; }
+
+  #top { position: relative; min-height: calc(100svh - 68px); overflow: hidden; background: #E9E4DC; }
+  #portrait { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 16%; background: #E9E4DC url('assets/portrait.jpg') center/cover no-repeat; }
+  #scrim { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(246,243,238,.74) 0%, rgba(246,243,238,.2) 24%, rgba(246,243,238,.66) 60%, rgba(246,243,238,.97) 88%); }
+  .hero-copy { position: relative; z-index: 2; min-height: calc(100svh - 68px); display: flex; flex-direction: column; justify-content: flex-end; padding: 96px 0 clamp(72px, 10vh, 96px); }
+  .hero-text { max-width: min(38rem, 92%); }
+  .cue { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-width: 56px; min-height: 56px; padding: 6px 10px; color: #4A4A44; }
+  @keyframes nudge { 0%, 100% { transform: translateY(0); opacity: .55; } 50% { transform: translateY(6px); opacity: 1; } }
+  .cue svg { animation: nudge 2.2s ease-in-out infinite; }
+  @keyframes rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  @supports (animation-timeline: view()) {
+    [data-rv] { animation: rise .8s cubic-bezier(.22,.61,.36,1) both; animation-timeline: view(); animation-range: entry 0% entry 60%; }
+  }
+
+  .grid { display: grid; grid-template-columns: 1fr; gap: clamp(24px, 3vw, 44px); align-items: start; }
+  .project { padding: clamp(44px, 5vw, 72px) 0; border-top: 1px solid rgba(30,30,28,.15); }
+  .project:first-of-type { padding-top: 0; border-top: 0; padding-bottom: clamp(44px, 5vw, 72px); }
+  .num { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: .14em; color: #8A857B; }
+  .ptitle { font-weight: 600; letter-spacing: -.025em; line-height: 1.12; font-size: clamp(1.5rem, 2.8vw, 2rem); text-wrap: balance; }
+  .question { max-width: 30rem; font-size: clamp(16px, 1.5vw, 17.5px); line-height: 1.6; color: #22364F; font-weight: 500; text-wrap: pretty; }
+  .evidence { padding: 16px 18px; border-left: 2px solid #22364F; background: #EFEAE2; border-radius: 0 10px 10px 0; font-size: 15.5px; line-height: 1.6; color: #33332F; text-wrap: pretty; }
+  .stack { display: flex; flex-direction: column; gap: 24px; }
+
+  [role="tablist"] { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  [role="tab"] { min-height: 44px; border-radius: 999px; border: 1px solid rgba(30,30,28,.28); background: transparent; color: #4A4A44; font-family: 'Archivo', sans-serif; font-size: 14.5px; font-weight: 500; padding: 0 20px; transition: background-color .2s ease, border-color .2s ease, color .2s ease; }
+  [role="tab"][aria-selected="true"] { background: #22364F; border-color: #22364F; color: #F6F3EE; }
+  [role="tabpanel"] { border-radius: 16px; overflow: hidden; border: 1px solid rgba(30,30,28,.14); background: #FAFAF8; }
+  [role="tabpanel"] img { display: block; width: 100%; height: auto; }
+  figure { margin: 0; }
+  figcaption { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+  figcaption span { font-size: 14.5px; line-height: 1.5; color: #5A5A54; text-wrap: pretty; }
+  .enlarge { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; border-radius: 999px; border: 1px solid rgba(30,30,28,.28); background: transparent; color: #1E1E1C; font-family: 'Archivo', sans-serif; font-size: 14px; font-weight: 500; padding: 0 18px; transition: background-color .2s ease, border-color .2s ease; }
+  .enlarge:hover { background: #fff; border-color: #1E1E1C; }
+
+  .role { padding: 28px 0; border-top: 1px solid rgba(30,30,28,.2); }
+  .role h3 { font-weight: 600; letter-spacing: -.02em; font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.22; margin-bottom: 6px; }
+  .role .org { font-size: 16.5px; color: #22364F; font-weight: 500; margin-bottom: 8px; }
+  .role .meta { font-family: 'IBM Plex Mono', monospace; font-size: 13.5px; color: #4A4A44; }
+  .role ul { display: flex; flex-direction: column; gap: 12px; }
+  .role li { display: flex; gap: 12px; font-size: clamp(15.5px, 1.45vw, 17px); line-height: 1.55; color: #33332F; }
+  .role li::before { content: ''; flex: 0 0 auto; width: 5px; height: 5px; border-radius: 50%; background: #22364F; margin-top: 9px; }
+
+  .entry { padding-top: 14px; border-top: 1px solid rgba(30,30,28,.2); }
+  .entry + .entry { margin-top: 20px; }
+  .entry h3 { font-weight: 600; font-size: clamp(1.02rem, 1.8vw, 1.2rem); line-height: 1.3; margin-bottom: 6px; }
+  .label { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: #5A5A54; margin-bottom: 20px; }
+  .skill-chip { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: .03em; color: #33332F; background: #F6F3EE; border: 1px solid rgba(30,30,28,.18); border-radius: 999px; padding: 7px 14px; overflow-wrap: anywhere; }
+
+  #contact { background: #1E1E1C; color: #F6F3EE; }
+  #contact .eyebrow { color: #A8B6C6; }
+  #contact .h2 { color: #F6F3EE; letter-spacing: -.035em; line-height: 1.04; font-size: clamp(2rem, 5vw, 3.2rem); }
+  .contact-link { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 44px; padding-bottom: 12px; border-bottom: 1px solid rgba(246,243,238,.22); color: #F6F3EE; font-size: 16.5px; transition: opacity .2s ease; }
+  .contact-link:hover { opacity: .6; color: #F6F3EE; }
+  .btn-light { background: #F6F3EE; color: #1E1E1C; font-size: 16px; font-weight: 600; padding: 0 30px; }
+  .btn-light:hover { background: #C6D3E2; color: #1E1E1C; }
+  .copy-btn { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; border-radius: 999px; border: 1px solid rgba(246,243,238,.34); background: transparent; color: #D3CEC7; font-family: 'Archivo', sans-serif; font-size: 13.5px; font-weight: 500; padding: 0 16px; transition: background-color .2s ease, color .2s ease; }
+  .copy-btn:hover { background: rgba(246,243,238,.12); color: #F6F3EE; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+  #lightbox { position: fixed; inset: 0; z-index: 60; background: rgba(18,18,16,.88); display: none; flex-direction: column; padding: clamp(12px, 2.5vw, 28px); }
+  #lightbox.open { display: flex; }
+  #lightbox .lb-head { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 12px; }
+  #lightbox .lb-title { font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; color: #D3CEC7; overflow-wrap: anywhere; }
+  #lb-close { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; border-radius: 999px; border: 1px solid rgba(246,243,238,.4); background: transparent; color: #F6F3EE; font-family: 'Archivo', sans-serif; font-size: 14.5px; font-weight: 500; padding: 0 18px; flex: 0 0 auto; transition: background-color .2s ease; }
+  #lb-close:hover { background: rgba(246,243,238,.14); }
+  #lb-scroll { flex: 1 1 auto; min-height: 0; overflow: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; background: #FAFAF8; }
+  #lb-scroll img { display: block; width: 100%; min-width: 760px; height: auto; }
+  #lightbox .lb-note { margin-top: 10px; flex: 0 0 auto; font-size: 13px; line-height: 1.5; color: #A8B6C6; text-wrap: pretty; }
+
+  @media (min-width: 768px) {
+    nav.desktop { display: flex; }
+    .burger { display: none; }
+    #mobile-menu { display: none; }
+    .hero-copy { justify-content: center; padding-bottom: 88px; }
+    .hero-text { max-width: min(33rem, 40vw); }
+    #portrait { left: 44%; width: 56%; object-position: 50% center; }
+    #scrim { left: 44%; width: 56%; background: linear-gradient(90deg, #E9E4DC 0%, rgba(233,228,220,.55) 16%, rgba(233,228,220,0) 42%); }
+    .cue { left: 22%; }
+    .grid.split { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
+    .grid.thirds { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid.halves { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid.project-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .grid.role-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 44px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Jaydipsinh Gohil, home">
+      <span class="mark" aria-hidden="true">JG</span>
+      <span class="name">Jaydipsinh Gohil</span>
+    </a>
+    <nav class="desktop" aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="resume" href="assets/Jaydipsinh_Gohil_Resume.pdf" download="Jaydipsinh_Gohil_Resume.pdf">Resume
+        <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M6 1v7.4M2.9 5.6 6 8.8l3.1-3.2M1.6 10.7h8.8"></path></svg>
+      </a>
+    </nav>
+    <button class="burger" id="menu-button" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div id="mobile-menu" inert>
+  <a href="#projects" data-menu-close>Projects</a>
+  <a href="#experience" data-menu-close>Experience</a>
+  <a href="#about" data-menu-close>About</a>
+  <a href="#contact" data-menu-close>Contact</a>
+  <a class="resume" href="assets/Jaydipsinh_Gohil_Resume.pdf" download="Jaydipsinh_Gohil_Resume.pdf" data-menu-close>Resume
+    <svg width="20" height="20" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M6 1v7.4M2.9 5.6 6 8.8l3.1-3.2M1.6 10.7h8.8"></path></svg>
+  </a>
+</div>
+
+<section id="top">
+  <video id="portrait" muted playsinline preload="none" poster="assets/portrait.jpg" aria-label="Portrait of Jaydipsinh Gohil"></video>
+  <div id="scrim" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="eyebrow" style="margin-bottom:14px">Data Analyst · Koblenz, Germany</p>
+        <p style="margin-bottom:14px; font-size:clamp(18px,2vw,21px); line-height:1.3; color:#33332F">Hi, I'm Jaydipsinh.</p>
+        <h1 style="font-weight:600; letter-spacing:-.035em; line-height:1.04; font-size:clamp(2.2rem,4.8vw,3.5rem)">Clear dashboards.<br /><span style="color:#22364F">Reliable reporting.</span></h1>
+        <p class="body" style="margin-top:24px; max-width:32rem">I use Power BI, SQL, and Excel to investigate business questions, validate data, and build KPI reports.</p>
+        <p class="mono" style="margin-top:16px; font-size:13px; letter-spacing:.06em; color:#4A4A44">Power BI · SQL · Excel · Tableau · Python</p>
+        <div class="actions" style="margin-top:28px">
+          <a class="btn btn-solid" href="#projects">View projects</a>
+          <a class="btn btn-ghost" style="background:rgba(246,243,238,.7)" href="assets/Jaydipsinh_Gohil_Resume.pdf" download="Jaydipsinh_Gohil_Resume.pdf">Download Resume
+            <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M6 1v7.4M2.9 5.6 6 8.8l3.1-3.2M1.6 10.7h8.8"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="cue" href="#projects" aria-label="Scroll to projects">
+    <span class="mono" style="font-size:10.5px; letter-spacing:.16em; text-transform:uppercase">Scroll</span>
+    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M7 2v14M2.4 11.6 7 16.4l4.6-4.8"></path></svg>
+  </a>
+</section>
+
+<section id="projects" style="padding:clamp(44px,6vw,84px) 0 0">
+  <div class="wrap">
+    <div data-rv style="margin-bottom:clamp(32px,4vw,48px)">
+      <p class="eyebrow" style="margin-bottom:14px">Selected projects</p>
+      <h2 class="h2" style="margin-bottom:16px">Analytics in practice.</h2>
+      <p class="body" style="max-width:38rem; color:#4A4A44">Three end-to-end reporting projects: the question behind each one, how the data was prepared, and what the finished report shows.</p>
+    </div>
+
+    <article class="project" id="project-ba" data-rv>
+      <div class="grid project-grid">
+        <div>
+          <p class="num" style="margin-bottom:12px">01</p>
+          <h3 class="ptitle" style="margin-bottom:16px">British Airways Reviews</h3>
+          <p class="question">Which service areas received the strongest and weakest ratings?</p>
+        </div>
+        <div class="stack">
+          <p class="body">Analyzed 901 historical reviews in Tableau, comparing service ratings, passenger groups, and monthly patterns.</p>
+          <p class="evidence">Cabin staff received the highest average service rating. Entertainment scored lower across a substantial sample; Wi-Fi had only 14 ratings, so its average needs more caution.</p>
+          <ul class="chips"><li class="chip">Tableau</li><li class="chip">SQL</li><li class="chip">Excel</li></ul>
+          <div class="actions">
+            <a class="btn btn-solid" href="https://public.tableau.com/app/profile/jaydipsinh.gohil/viz/BritishAirwaysReviewsDashboard_17889618499830/OverviewTrends" target="_blank" rel="noopener">View live Tableau dashboard
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.2 8.8 8.8 3.2M4.4 3.2h4.4v4.4"></path></svg>
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/JJGohildev/ba-reviews-tableau-dashboard" target="_blank" rel="noopener">View project on GitHub</a>
+            <a class="link-plain" href="https://github.com/JJGohildev/ba-reviews-tableau-dashboard/blob/main/case_study.md" target="_blank" rel="noopener">Read case study</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery" data-project="ba" style="margin-top:clamp(24px,3vw,32px)">
+        <div role="tablist" aria-label="British Airways dashboard pages">
+          <button id="tab-ba-a" type="button" role="tab" aria-selected="true" aria-controls="panel-ba-a" tabindex="0">Overview</button>
+          <button id="tab-ba-b" type="button" role="tab" aria-selected="false" aria-controls="panel-ba-b" tabindex="-1">Monthly trends</button>
+        </div>
+        <figure>
+          <div id="panel-ba-a" role="tabpanel" aria-labelledby="tab-ba-a">
+            <img src="assets/previews/ba-overview.png" alt="British Airways reviews overview: 901 reviews, average rating 5.88 out of 10 and 56.8 percent recommendation rate, with average service ratings by category, rating band distribution, and monthly average ratings" loading="lazy" decoding="async" data-lb-title="British Airways Reviews — Overview" />
+          </div>
+          <div id="panel-ba-b" role="tabpanel" aria-labelledby="tab-ba-b" hidden>
+            <img src="assets/previews/ba-trends.png" alt="British Airways review timing: average rating by review month alongside the number of reviews recorded in each month" loading="lazy" decoding="async" data-lb-title="British Airways Reviews — Monthly trends" />
+          </div>
+          <figcaption>
+            <span data-caption>Tableau report · 901 historical reviews</span>
+            <button class="enlarge" type="button" data-enlarge>
+              <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1.4 4.4V1.4h3M10.6 7.6v3h-3M10.6 4.4V1.4h-3M1.4 7.6v3h3"></path></svg>
+              Enlarge preview
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="project" id="project-cx" data-rv>
+      <div class="grid project-grid">
+        <div>
+          <p class="num" style="margin-bottom:12px">02</p>
+          <h3 class="ptitle" style="margin-bottom:16px">Customer Experience Analytics</h3>
+          <p class="question">How do support demand and customer satisfaction change over time?</p>
+        </div>
+        <div class="stack">
+          <p class="body">Built a Power BI report covering ticket volume, satisfaction, response times, and first-contact resolution.</p>
+          <p class="evidence">Includes SQL validation checks, a data model, and documented DAX measures.</p>
+          <ul class="chips"><li class="chip">Power BI</li><li class="chip">SQL</li><li class="chip">Excel</li><li class="chip">Power Query</li><li class="chip">DAX</li></ul>
+          <div class="actions">
+            <a class="btn btn-solid" href="https://github.com/JJGohildev/cx-analytics-dashboard" target="_blank" rel="noopener">View project on GitHub
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.2 8.8 8.8 3.2M4.4 3.2h4.4v4.4"></path></svg>
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/JJGohildev/cx-analytics-dashboard/blob/main/case_study.md" target="_blank" rel="noopener">Read case study</a>
+            <a class="link-plain" href="https://github.com/JJGohildev/cx-analytics-dashboard/blob/main/powerbi/CX_Analytics_PowerBI.pbix" target="_blank" rel="noopener">Power BI file (.pbix) on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery" data-project="cx" style="margin-top:clamp(24px,3vw,32px)">
+        <div role="tablist" aria-label="Customer Experience report pages">
+          <button id="tab-cx-a" type="button" role="tab" aria-selected="true" aria-controls="panel-cx-a" tabindex="0" data-caption-text="Power BI report · August 2026; NPS uses the latest-quarter measure · Simulated data">Overview</button>
+          <button id="tab-cx-b" type="button" role="tab" aria-selected="false" aria-controls="panel-cx-b" tabindex="-1" data-caption-text="Power BI report · Billing &amp; Payments selected · Simulated data">Trends</button>
+        </div>
+        <figure>
+          <div id="panel-cx-a" role="tabpanel" aria-labelledby="tab-cx-a">
+            <img src="assets/previews/cx-pbi-overview.png" alt="Power BI Overview page with KPI cards for ticket volume, NPS, average resolution hours, average first response minutes, first-contact resolution rate and average CSAT" loading="lazy" decoding="async" data-lb-title="Customer Experience Analytics — Overview" />
+          </div>
+          <div id="panel-cx-b" role="tabpanel" aria-labelledby="tab-cx-b" hidden>
+            <img src="assets/previews/cx-pbi-trends.png" alt="Power BI Trends page: feedback category slicer with line charts for ticket volume by month and average CSAT by month" loading="lazy" decoding="async" data-lb-title="Customer Experience Analytics — Trends" />
+          </div>
+          <figcaption>
+            <span data-caption>Power BI report · August 2026; NPS uses the latest-quarter measure · Simulated data</span>
+            <button class="enlarge" type="button" data-enlarge>
+              <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1.4 4.4V1.4h3M10.6 7.6v3h-3M10.6 4.4V1.4h-3M1.4 7.6v3h3"></path></svg>
+              Enlarge preview
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="project" id="project-hr" data-rv>
+      <div class="grid project-grid">
+        <div>
+          <p class="num" style="margin-bottom:12px">03</p>
+          <h3 class="ptitle" style="margin-bottom:16px">HR Performance &amp; Reporting Automation</h3>
+          <p class="question">How does the workforce change, and which reporting steps can be automated?</p>
+        </div>
+        <div class="stack">
+          <p class="body">Built Power BI views of headcount, attrition, engagement, and training using simulated workforce data.</p>
+          <p class="evidence">Includes SQL checks and an Excel VBA routine designed to refresh workbook data and export a PDF summary.</p>
+          <ul class="chips"><li class="chip">Power BI</li><li class="chip">SQL</li><li class="chip">Excel</li><li class="chip">Power Query</li><li class="chip">DAX</li><li class="chip">VBA</li></ul>
+          <div class="actions">
+            <a class="btn btn-solid" href="https://github.com/JJGohildev/HR-Performance-KPI-dashboard" target="_blank" rel="noopener">View project on GitHub
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.2 8.8 8.8 3.2M4.4 3.2h4.4v4.4"></path></svg>
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/JJGohildev/HR-Performance-KPI-dashboard/blob/main/case_study.md" target="_blank" rel="noopener">Read case study</a>
+            <a class="link-plain" href="https://github.com/JJGohildev/HR-Performance-KPI-dashboard/blob/main/pbix/Meridian_HR_KPI.pbix" target="_blank" rel="noopener">Power BI file (.pbix) on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery" data-project="hr" style="margin-top:clamp(24px,3vw,32px)">
+        <div role="tablist" aria-label="HR report pages">
+          <button id="tab-hr-a" type="button" role="tab" aria-selected="true" aria-controls="panel-hr-a" tabindex="0">Overview</button>
+          <button id="tab-hr-b" type="button" role="tab" aria-selected="false" aria-controls="panel-hr-b" tabindex="-1">Workforce trends</button>
+        </div>
+        <figure>
+          <div id="panel-hr-a" role="tabpanel" aria-labelledby="tab-hr-a">
+            <img src="assets/previews/hr-overview.png" alt="HR performance and engagement page with KPI cards and attrition and engagement trend charts" loading="lazy" decoding="async" data-lb-title="HR Performance — Overview" />
+          </div>
+          <div id="panel-hr-b" role="tabpanel" aria-labelledby="tab-hr-b" hidden>
+            <img src="assets/previews/hr-trends.png" alt="Workforce trends page: new hires versus terminations, absenteeism rate trend, and training completion rate by department" loading="lazy" decoding="async" data-lb-title="HR Performance — Workforce trends" />
+          </div>
+          <figcaption>
+            <span data-caption>Power BI report · Simulated workforce data</span>
+            <button class="enlarge" type="button" data-enlarge>
+              <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1.4 4.4V1.4h3M10.6 7.6v3h-3M10.6 4.4V1.4h-3M1.4 7.6v3h3"></path></svg>
+              Enlarge preview
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="sec tint">
+  <div class="wrap">
+    <div data-rv style="margin-bottom:clamp(28px,3.5vw,40px)">
+      <p class="eyebrow" style="margin-bottom:14px">Experience</p>
+      <h2 class="h2">Professional experience.</h2>
+    </div>
+    <article class="role grid role-grid" data-rv>
+      <div>
+        <h3>Junior Data Analyst</h3>
+        <p class="org">Aim Brilliant</p>
+        <p class="meta">Texas, USA | January 2021 – July 2022</p>
+      </div>
+      <ul>
+        <li>Examined business and operational data using SQL and Tableau to identify trends and support decision making.</li>
+        <li>Developed interactive KPI dashboards, scorecards, and data models for performance reporting.</li>
+        <li>Maintained data accuracy and consistency across reporting datasets and gathered requirements with stakeholders.</li>
+      </ul>
+    </article>
+    <article class="role grid role-grid" data-rv>
+      <div>
+        <h3>Data Analytics Intern</h3>
+        <p class="org">Diya Metal Industries</p>
+        <p class="meta">Jamnagar, India | March 2020 – September 2020</p>
+      </div>
+      <ul>
+        <li>Applied Python and SQL to prepare and analyze business datasets.</li>
+        <li>Integrated SAP data with Power BI to build interactive dashboards.</li>
+        <li>Performed data cleaning and transformation to ensure accuracy across reports.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap">
+    <div data-rv style="margin-bottom:clamp(28px,3.5vw,40px)">
+      <p class="eyebrow" style="margin-bottom:14px">About</p>
+      <h2 class="h2">About me.</h2>
+    </div>
+    <div class="grid split">
+      <div data-rv>
+        <p class="body" style="max-width:34rem; font-size:clamp(16px,1.5vw,18px); line-height:1.62">I'm a data analyst based in Koblenz, Germany, with experience in KPI reporting, dashboard development, and data preparation. My background combines professional analytics work with mechanical engineering and MSc studies at the University of Koblenz.</p>
+        <div style="margin-top:32px">
+          <p class="label">Education</p>
+          <div class="entry">
+            <h3>MSc — Mathematical Modeling, Simulation and Optimization</h3>
+            <p style="margin-bottom:4px; font-size:16px; color:#33332F">University of Koblenz, Germany</p>
+            <p class="meta mono" style="font-size:13.5px; color:#4A4A44">October 2022 – Present</p>
+          </div>
+          <div class="entry">
+            <h3>Bachelor of Engineering — Mechanical Engineering</h3>
+            <p style="margin-bottom:4px; font-size:16px; color:#33332F">Government Engineering College, Bhavnagar, India</p>
+            <p class="meta mono" style="font-size:13.5px; color:#4A4A44">August 2016 – September 2020</p>
+          </div>
+        </div>
+      </div>
+      <div data-rv>
+        <p class="label">Languages</p>
+        <div class="entry">
+          <h3>English</h3>
+          <p style="font-size:16px; color:#4A4A44">C1 — professional proficiency</p>
+        </div>
+        <div class="entry">
+          <h3>German</h3>
+          <p style="font-size:16px; color:#4A4A44">B1 — improving towards B2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec tint">
+  <div class="wrap">
+    <div data-rv style="margin-bottom:clamp(28px,3.5vw,40px)">
+      <p class="eyebrow" style="margin-bottom:14px">Skills</p>
+      <h2 class="h2">Technical skills.</h2>
+    </div>
+    <div class="grid thirds" style="gap:clamp(24px,3vw,32px)">
+      <div data-rv class="entry" style="margin-top:0">
+        <h3 style="margin-bottom:14px; font-size:16.5px; letter-spacing:-.01em">Reporting</h3>
+        <ul class="chips"><li class="skill-chip">Power BI</li><li class="skill-chip">Tableau</li><li class="skill-chip">Excel</li></ul>
+      </div>
+      <div data-rv class="entry" style="margin-top:0">
+        <h3 style="margin-bottom:14px; font-size:16.5px; letter-spacing:-.01em">Data preparation &amp; analysis</h3>
+        <ul class="chips"><li class="skill-chip">SQL</li><li class="skill-chip">Power Query</li><li class="skill-chip">Python</li><li class="skill-chip">Jupyter</li><li class="skill-chip">Snowflake — basic knowledge</li></ul>
+      </div>
+      <div data-rv class="entry" style="margin-top:0">
+        <h3 style="margin-bottom:14px; font-size:16.5px; letter-spacing:-.01em">Modeling &amp; automation</h3>
+        <ul class="chips"><li class="skill-chip">DAX</li><li class="skill-chip">Data modeling</li><li class="skill-chip">Data validation</li><li class="skill-chip">Excel VBA</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <div class="wrap">
+    <div data-rv style="margin-bottom:clamp(32px,4vw,48px); max-width:42rem">
+      <p class="eyebrow" style="margin-bottom:14px">Contact</p>
+      <h2 class="h2" style="margin-bottom:18px">Let's connect.</h2>
+      <p class="body" style="max-width:34rem; color:#D3CEC7">I'm interested in data analyst and business intelligence opportunities. Contact me by email or connect on LinkedIn.</p>
+    </div>
+    <div class="grid halves" data-rv>
+      <div style="display:flex; flex-direction:column; gap:16px; align-items:flex-start">
+        <a class="btn btn-light" href="mailto:jaydipsinhgohil12@gmail.com?subject=Data%20analyst%20role">Email me
+          <svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1.4 3.2h9.2v5.6H1.4zM1.6 3.4 6 6.6l4.4-3.2"></path></svg>
+        </a>
+        <div class="actions">
+          <a href="mailto:jaydipsinhgohil12@gmail.com" style="font-size:16px; color:#D3CEC7; text-decoration:underline; text-underline-offset:4px; overflow-wrap:anywhere">jaydipsinhgohil12@gmail.com</a>
+          <button class="copy-btn" id="copy-email" type="button" aria-label="Copy email address">
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="3.4" y="3.4" width="7.4" height="7.4" rx="1.2"></rect><path d="M8.2 1.2H2.4A1.2 1.2 0 0 0 1.2 2.4v5.8"></path></svg>
+            Copy
+          </button>
+          <span id="copy-flash" aria-hidden="true" style="font-size:13.5px; color:#A8B6C6; opacity:0; transition:opacity .25s ease"></span>
+        </div>
+        <span class="sr" id="copy-status" aria-live="polite"></span>
+        <p style="max-width:26rem; font-size:13.5px; line-height:1.5; color:#A8B6C6; text-wrap:pretty">If your email app doesn't open, copy the address above.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px">
+        <a class="contact-link" href="https://www.linkedin.com/in/jjgohil/" target="_blank" rel="noopener">LinkedIn
+          <svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.2 8.8 8.8 3.2M4.4 3.2h4.4v4.4"></path></svg>
+        </a>
+        <a class="contact-link" href="https://github.com/JJGohildev" target="_blank" rel="noopener">GitHub
+          <svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.2 8.8 8.8 3.2M4.4 3.2h4.4v4.4"></path></svg>
+        </a>
+        <p class="mono" style="margin-top:12px; font-size:13.5px; letter-spacing:.02em; color:#A8B6C6">Koblenz, Germany</p>
+      </div>
+    </div>
+    <p class="mono" style="margin-top:clamp(32px,4vw,48px); font-size:12.5px; letter-spacing:.05em; color:#9A958C">© 2026 Jaydipsinh Gohil</p>
+  </div>
+</section>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+  <div class="lb-head">
+    <p class="lb-title" id="lb-title"></p>
+    <button id="lb-close" type="button">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2.4 2.4l7.2 7.2M9.6 2.4l-7.2 7.2"></path></svg>
+      Close
+    </button>
+  </div>
+  <div id="lb-scroll" tabindex="0" role="group" aria-label="Dashboard preview, scrollable">
+    <img id="lb-img" alt="" />
+  </div>
+  <p class="lb-note">The preview is shown at full width and scrolls in both directions — drag or swipe inside it, or focus it with Tab and use the arrow keys. Press Escape to close.</p>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Portrait scrubbing ----------
+     The frame shown is driven by horizontal cursor travel. Three things have to
+     hold for that to work on a static host:
+       1. the video element must actually get a src (previously it only got one
+          from a fetch() that silently failed off-origin),
+       2. currentTime writes must stick, which needs a seekable range — a blob
+          URL guarantees that even if the host ignores Range requests,
+       3. seeks must be serialised, or the browser drops them.
+     So: set the file src immediately (works wherever Range works), then try to
+     upgrade to a blob in the background. If the fetch fails we still have a
+     working direct src instead of nothing. */
+  var video = document.getElementById('portrait');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var coarse = window.matchMedia('(pointer: coarse)').matches;
+  var VIDEO_SRC = 'assets/portrait.mp4';
+
+  if (video && !reduced && !coarse) {
+    var prevX = null, targetTime = 0, seeking = false, lastSeekAt = 0, ready = false;
+
+    video.addEventListener('loadedmetadata', function () {
+      ready = !!(video.duration && isFinite(video.duration));
+      if (ready) { targetTime = Math.min(0.001, video.duration); video.currentTime = targetTime; }
+    });
+    video.addEventListener('seeked', function () {
+      if (Math.abs(targetTime - video.currentTime) > 0.01) {
+        lastSeekAt = performance.now();
+        video.currentTime = targetTime;
+      } else { seeking = false; }
+    });
+    video.addEventListener('error', function () { /* poster stays visible */ });
+
+    video.preload = 'auto';
+    video.src = VIDEO_SRC;
+    video.load();
+
+    // Background upgrade to a fully seekable blob; harmless if it fails.
+    if (window.fetch) {
+      fetch(VIDEO_SRC).then(function (r) {
+        return r.ok ? r.blob() : Promise.reject(new Error('video unavailable'));
+      }).then(function (b) {
+        var url = URL.createObjectURL(b);
+        var t = video.currentTime;
+        video.src = url;
+        video.load();
+        video.addEventListener('loadedmetadata', function once() {
+          video.removeEventListener('loadedmetadata', once);
+          try { video.currentTime = t; targetTime = t; } catch (e) {}
+        });
+      }).catch(function () {});
+    }
+
+    window.addEventListener('mousemove', function (e) {
+      if (!ready) { prevX = e.clientX; return; }
+      if (prevX === null) { prevX = e.clientX; return; }
+      var delta = e.clientX - prevX;
+      prevX = e.clientX;
+      targetTime = Math.max(0, Math.min(video.duration, targetTime + (delta / window.innerWidth) * 0.8 * video.duration));
+      if (seeking && performance.now() - lastSeekAt > 250) seeking = false;
+      if (!seeking) { seeking = true; lastSeekAt = performance.now(); video.currentTime = targetTime; }
+    }, { passive: true });
+  }
+
+  /* ---------- Mobile menu ---------- */
+  var menu = document.getElementById('mobile-menu');
+  var menuButton = document.getElementById('menu-button');
+  var menuOpen = false;
+
+  function lockScroll(on) { document.body.style.overflow = on ? 'hidden' : ''; }
+
+  function setMenu(open, restoreFocus) {
+    menuOpen = open;
+    menu.classList.toggle('open', open);
+    menuButton.setAttribute('aria-expanded', String(open));
+    if (open) { menu.removeAttribute('inert'); } else { menu.setAttribute('inert', ''); }
+    lockScroll(open || lightboxOpen);
+    if (open) {
+      var first = menu.querySelector('a');
+      if (first) first.focus();
+    } else if (restoreFocus) {
+      menuButton.focus();
+    }
+  }
+
+  menuButton.addEventListener('click', function () { setMenu(!menuOpen, true); });
+  Array.prototype.forEach.call(menu.querySelectorAll('[data-menu-close]'), function (a) {
+    a.addEventListener('click', function () { setMenu(false, false); });
+  });
+
+  var desktopMQ = window.matchMedia('(min-width: 768px)');
+  function onBreakpoint(e) { if (e.matches && menuOpen) setMenu(false, false); }
+  if (desktopMQ.addEventListener) desktopMQ.addEventListener('change', onBreakpoint);
+  else desktopMQ.addListener(onBreakpoint);
+
+  window.addEventListener('keydown', function (e) {
+    if (!menuOpen) return;
+    if (e.key === 'Escape') { e.preventDefault(); setMenu(false, true); return; }
+    if (e.key !== 'Tab') return;
+    // The hamburger is the visible close control and sits above the overlay,
+    // so it is the first stop in the cycle.
+    var nodes = [menuButton].concat(Array.prototype.slice.call(menu.querySelectorAll('a[href]')));
+    var i = nodes.indexOf(document.activeElement);
+    var next = e.shiftKey
+      ? (i <= 0 ? nodes.length - 1 : i - 1)
+      : (i === -1 || i === nodes.length - 1 ? 0 : i + 1);
+    e.preventDefault();
+    nodes[next].focus();
+  });
+
+  /* ---------- Gallery tabs ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('.gallery'), function (gallery) {
+    var tabs = Array.prototype.slice.call(gallery.querySelectorAll('[role="tab"]'));
+    var caption = gallery.querySelector('[data-caption]');
+
+    function select(index, focus) {
+      tabs.forEach(function (tab, i) {
+        var on = i === index;
+        tab.setAttribute('aria-selected', String(on));
+        tab.tabIndex = on ? 0 : -1;
+        document.getElementById(tab.getAttribute('aria-controls')).hidden = !on;
+        if (on && focus) tab.focus();
+        if (on && caption && tab.dataset.captionText) caption.textContent = tab.dataset.captionText;
+      });
+    }
+
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () { select(i, false); });
+    });
+
+    gallery.querySelector('[role="tablist"]').addEventListener('keydown', function (e) {
+      var i = tabs.indexOf(document.activeElement);
+      if (e.key === 'ArrowRight') { e.preventDefault(); select(((i < 0 ? 0 : i) + 1) % tabs.length, true); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); select(((i < 0 ? 0 : i) - 1 + tabs.length) % tabs.length, true); }
+      else if (e.key === 'Home') { e.preventDefault(); select(0, true); }
+      else if (e.key === 'End') { e.preventDefault(); select(tabs.length - 1, true); }
+    });
+
+    gallery.querySelector('[data-enlarge]').addEventListener('click', function () {
+      var panel = gallery.querySelector('[role="tabpanel"]:not([hidden]) img');
+      openLightbox(panel, this);
+    });
+  });
+
+  /* ---------- Enlarged preview ---------- */
+  var lightbox = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lb-img');
+  var lbTitle = document.getElementById('lb-title');
+  var lbClose = document.getElementById('lb-close');
+  var lbScroll = document.getElementById('lb-scroll');
+  var lightboxOpen = false;
+  var lastFocus = null;
+
+  function openLightbox(img, trigger) {
+    if (!img) return;
+    lastFocus = trigger || document.activeElement;
+    lbImg.src = img.currentSrc || img.src;
+    lbImg.alt = img.alt;
+    lbTitle.textContent = img.dataset.lbTitle || '';
+    lightbox.classList.add('open');
+    lightboxOpen = true;
+    lockScroll(true);
+    lbScroll.scrollTop = 0;
+    lbScroll.scrollLeft = 0;
+    lbClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightboxOpen = false;
+    lockScroll(menuOpen);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function (e) { if (e.target === lightbox) closeLightbox(); });
+  lightbox.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { e.stopPropagation(); closeLightbox(); return; }
+    if (e.key !== 'Tab') return;
+    var nodes = [lbClose, lbScroll];
+    var i = nodes.indexOf(document.activeElement);
+    var next = e.shiftKey
+      ? (i <= 0 ? nodes.length - 1 : i - 1)
+      : (i === -1 || i === nodes.length - 1 ? 0 : i + 1);
+    e.preventDefault();
+    nodes[next].focus();
+  });
+
+  /* ---------- Copy email ---------- */
+  var copyBtn = document.getElementById('copy-email');
+  var flash = document.getElementById('copy-flash');
+  var status = document.getElementById('copy-status');
+  var flashTimer;
+  var EMAIL = 'jaydipsinhgohil12@gmail.com';
+
+  function legacyCopy(text) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, text.length);
+      var ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      return ok;
+    } catch (err) { return false; }
+  }
+
+  function finishCopy(ok) {
+    flash.textContent = ok ? 'Copied' : 'Copy blocked — select and copy';
+    flash.style.color = ok ? '#A8B6C6' : '#E8B4A0';
+    flash.style.opacity = '1';
+    status.textContent = ok ? 'Email address copied' : 'Copy blocked by the browser — select the address and copy manually';
+    clearTimeout(flashTimer);
+    flashTimer = setTimeout(function () { flash.style.opacity = '0'; status.textContent = ''; }, 3200);
+  }
+
+  copyBtn.addEventListener('click', function () {
+    if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
+      navigator.clipboard.writeText(EMAIL).then(function () { finishCopy(true); }, function () { finishCopy(legacyCopy(EMAIL)); });
+    } else {
+      finishCopy(legacyCopy(EMAIL));
+    }
+  });
+})();
+</script>
+</body>
+</html>
